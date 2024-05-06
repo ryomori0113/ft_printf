@@ -6,7 +6,7 @@
 /*   By: ryomori <ryomori@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/03 09:45:17 by ryomori           #+#    #+#             */
-/*   Updated: 2024/05/06 12:49:44 by ryomori          ###   ########.fr       */
+/*   Updated: 2024/05/06 16:53:38 by ryomori          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@ int	ft_case_something(int c, va_list args)
 	else if (c == 'd' || c == 'i')
 		n = ft_case_int(va_arg(args, int));
 	else if (c == 'u')
-		n = ft_case_unint((unsigned long long)va_arg(args, unsigned long long));
+		n = ft_case_unint((unsigned int)va_arg(args, unsigned int));
 	else if (c == 'x')
 		n = ft_case_hexa(va_arg(args, unsigned int), 1);
 	else if (c == 'X')

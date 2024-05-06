@@ -6,7 +6,7 @@
 /*   By: ryomori <ryomori@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/03 15:03:50 by ryomori           #+#    #+#             */
-/*   Updated: 2024/05/06 16:12:10 by ryomori          ###   ########.fr       */
+/*   Updated: 2024/05/06 16:53:16 by ryomori          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ static int	ft_put_nbr(unsigned int n)
 	return (t);
 }
 
-int	ft_case_unint(unsigned long long unint)
+int	ft_case_unint(unsigned int unint)
 {
 	int	n;
 
