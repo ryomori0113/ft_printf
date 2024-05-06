@@ -6,16 +6,16 @@
 /*   By: ryomori <ryomori@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/03 15:03:50 by ryomori           #+#    #+#             */
-/*   Updated: 2024/05/04 15:59:59 by ryomori          ###   ########.fr       */
+/*   Updated: 2024/05/06 16:12:10 by ryomori          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static int	ft_put_nbr(unsigned long long n)
+static int	ft_put_nbr(unsigned int n)
 {
 	char				str;
-	unsigned long long	tmp;
+	unsigned int		tmp;
 	size_t				t;
 
 	tmp = n;
@@ -29,7 +29,8 @@ static int	ft_put_nbr(unsigned long long n)
 		ft_put_nbr(n / 10);
 	str = '0' + n % 10;
 	write (1, &str, 1);
-	return (t + 1);
+	t = t + 1;
+	return (t);
 }
 
 int	ft_case_unint(unsigned long long unint)
