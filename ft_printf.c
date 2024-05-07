@@ -6,7 +6,7 @@
 /*   By: ryomori <ryomori@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/03 09:45:17 by ryomori           #+#    #+#             */
-/*   Updated: 2024/05/06 17:00:38 by ryomori          ###   ########.fr       */
+/*   Updated: 2024/05/07 15:43:04 by ryomori          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,9 +48,9 @@ int	ft_count_out(const char *save, va_list args)
 			ft_putchar_fd(save[i], 1);
 			c++;
 		}
-		i++;
 		if (!save[i])
 			return (c);
+		i++;
 	}
 	return (c);
 }
