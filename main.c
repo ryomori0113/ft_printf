@@ -115,6 +115,21 @@
     printf("ft_printf: %d\n", value_ft);
     printf("   printf: %d\n", value_orgin);
 
+   printf("\n");
+
+    value_orgin = printf(" ");
+	printf("   printf: %d\n", value_orgin);
+
+   printf("\n");
+
+    value_orgin = printf("\0");
+	printf("   printf: %d\n", value_orgin);
+
+	printf("\n");
+
+    value_orgin = printf("?");
+	printf("   printf: %d\n", value_orgin);
+
     printf("\n");
 }
 
