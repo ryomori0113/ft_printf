@@ -6,7 +6,7 @@
 /*   By: ryomori <ryomori@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/03 09:21:39 by ryomori           #+#    #+#             */
-/*   Updated: 2024/05/06 13:36:16 by ryomori          ###   ########.fr       */
+/*   Updated: 2024/05/06 17:13:00 by ryomori          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int		ft_case_int(int i);
 int		ft_case_hexa(unsigned int i, int f);
 int		ft_case_pointer(unsigned long long point);
 int		ft_case_string(char *str);
-int		ft_case_unint(unsigned long long unint);
+int		ft_case_unint(unsigned int unint);
 int		ft_printf(const char *input, ...);
 int		ft_count_out(const char *save, va_list args);
 int		ft_case_something(int c, va_list args);
