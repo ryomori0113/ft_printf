@@ -1,6 +1,19 @@
-#include "printf.h"
-#include <stdio.h>
-#include <limits.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ryomori <ryomori@student.42tokyo.jp>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/05/07 16:11:46 by ryomori           #+#    #+#             */
+/*   Updated: 2024/05/07 16:29:00 by ryomori          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+
+// #include "printf.h"
+// #include <stdio.h>
+// #include <limits.h>
 
 // int main()
 // {
@@ -110,27 +123,5 @@
 
     printf("\n");
 
-	value_ft = ft_printf("%");
-    value_orgin = printf("%");
-    printf("ft_printf: %d\n", value_ft);
-    printf("   printf: %d\n", value_orgin);
-
-   printf("\n");
-
-    value_orgin = printf(" ");
-	printf("   printf: %d\n", value_orgin);
-
-   printf("\n");
-
-    value_orgin = printf("\0");
-	printf("   printf: %d\n", value_orgin);
-
-	printf("\n");
-
-    value_orgin = printf("?");
-	printf("   printf: %d\n", value_orgin);
-
     printf("\n");
 }
-
-
