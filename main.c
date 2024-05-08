@@ -6,7 +6,7 @@
 /*   By: ryomori <ryomori@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/07 16:11:46 by ryomori           #+#    #+#             */
-/*   Updated: 2024/05/08 09:48:47 by ryomori          ###   ########.fr       */
+/*   Updated: 2024/05/08 10:23:24 by ryomori          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,8 +76,8 @@
 //     printf("   printf: %d\n", value_orgin);
 //     printf("\n");
 
-//     value_ft = ft_printf("%%\n");
-//     value_orgin = printf("%%\n");
+//     value_ft = ft_printf("%%%%%\n");
+//     value_orgin = printf("%%%%%\n");
 //     printf("ft_printf: %d\n", value_ft);
 //     printf("   printf: %d\n", value_orgin);
 
@@ -100,14 +100,27 @@
 //     printf("   printf: %d\n", value_orgin);
 
 //     printf("\n");
-// 	printf("\n");
 
 // 	value_ft = ft_printf("%\n");
 //     value_orgin = printf("%\n");
 //     printf("ft_printf: %d\n", value_ft);
 //     printf("   printf: %d\n", value_orgin);
 
+// 	printf("\n");
 
+//     value_ft = ft_printf("%r%w%b%m%\n");
+//     value_orgin = printf("%r%w%b%m%\n");
+//     printf("ft_printf: %d\n", value_ft);
+//     printf("   printf: %d\n", value_orgin);
+
+//     printf("\n");
+
+//     value_ft = ft_printf("%r%w%b%m%%%\n");
+//     value_orgin = printf("%r%w%b%m%%%\n");
+//     printf("ft_printf: %d\n", value_ft);
+//     printf("   printf: %d\n", value_orgin);
+
+// 	printf("\n");
 // }
 
 // 	int main()
@@ -126,27 +139,27 @@
 //     printf("\n");
 // }
 
-#include <stdio.h>
-#include "printf.h"
+// #include <stdio.h>
+// #include "printf.h"
 
-int main(){
-	printf("own:");
-	fflush(NULL);
-	int a = ft_printf("%");
-	printf("\n");
-	printf("lib:");
-	int b = printf("%");
+// int main(){
+// 	printf("own:");
+// 	fflush(NULL);
+// 	int a = ft_printf("%");
+// 	printf("\n");
+// 	printf("lib:");
+// 	int b = printf("%");
 
 
-	printf("\n");
-	printf("own:");
-	fflush(NULL);
-	int c = ft_printf("%r%r%r%r");
-		printf("\n");
-	printf("lib:");
-	int d = printf("%r%r%r%r");	
-	printf("\n");
-	printf("a:%d, \nb:%d, \nc:%d, \nd:%d\n",a,b,c,d);
-	return (0);
+// 	printf("\n");
+// 	printf("own:");
+// 	fflush(NULL);
+// 	int c = ft_printf("%r%r%r%r");
+// 		printf("\n");
+// 	printf("lib:");
+// 	int d = printf("%r%r%r%r");	
+// 	printf("\n");
+// 	printf("a:%d, \nb:%d, \nc:%d, \nd:%d\n",a,b,c,d);
+// 	return (0);
 
-}
+// }
