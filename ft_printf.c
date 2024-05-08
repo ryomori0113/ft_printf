@@ -6,7 +6,7 @@
 /*   By: ryomori <ryomori@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/03 09:45:17 by ryomori           #+#    #+#             */
-/*   Updated: 2024/05/07 16:29:59 by ryomori          ###   ########.fr       */
+/*   Updated: 2024/05/08 09:54:35 by ryomori          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,5 +76,10 @@ int	ft_case_something(int c, va_list args)
 		n = ft_case_hexa(va_arg(args, unsigned int), 2);
 	else if (c == '%')
 		n = ft_putstr_count("%");
+	else if (c != '\0')
+	{
+		ft_putchar_fd(c, 1);
+		n++;
+	}
 	return (n);
 }

@@ -6,7 +6,7 @@
 /*   By: ryomori <ryomori@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/07 16:11:46 by ryomori           #+#    #+#             */
-/*   Updated: 2024/05/07 16:29:00 by ryomori          ###   ########.fr       */
+/*   Updated: 2024/05/08 09:48:47 by ryomori          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,18 +110,43 @@
 
 // }
 
-	int main()
-{
-    char *test;
-    int value_ft;
-    int value_orgin;
+// 	int main()
+// {
+//     char *test;
+//     int value_ft;
+//     int value_orgin;
 
-	value_ft = ft_printf("abc%r\n");
-    value_orgin = printf("abc%r\n");
-    printf("ft_printf: %d\n", value_ft);
-    printf("   printf: %d\n", value_orgin);
+// 	value_ft = ft_printf("abc%r\n");
+//     value_orgin = printf("abc%r\n");
+//     printf("ft_printf: %d\n", value_ft);
+//     printf("   printf: %d\n", value_orgin);
 
-    printf("\n");
+//     printf("\n");
 
-    printf("\n");
+//     printf("\n");
+// }
+
+#include <stdio.h>
+#include "printf.h"
+
+int main(){
+	printf("own:");
+	fflush(NULL);
+	int a = ft_printf("%");
+	printf("\n");
+	printf("lib:");
+	int b = printf("%");
+
+
+	printf("\n");
+	printf("own:");
+	fflush(NULL);
+	int c = ft_printf("%r%r%r%r");
+		printf("\n");
+	printf("lib:");
+	int d = printf("%r%r%r%r");	
+	printf("\n");
+	printf("a:%d, \nb:%d, \nc:%d, \nd:%d\n",a,b,c,d);
+	return (0);
+
 }
